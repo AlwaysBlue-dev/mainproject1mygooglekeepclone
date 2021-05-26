@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  width: 100%;
+  line-height: 100px;
+  background-color: #228b22;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rbga(0, 0, 0, 0.3);
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+textarea {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+input {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+form {
+  min-height: 50px;
+  color: #ecf0f1;
+  padding: 15px 10px 15px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+.main_note {
+  width: 500px;
+  padding: 15px 10px 5px 10px;
+  margin: 2px auto;
+}
+.MuiButton-root {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: -28px;
+  left: 407px;
+  cursor: pointer;
+  background-color: #fff !important;
+  box-shadow: 5px 5px 15px -5px rbga(0, 0, 0, 0.3);
+  border-radius: 50% !important;
+}
+.MuiButton-root .plus_sign {
+  font-size: 45px !important;
+  font-weight: 900;
+  color: #228b22;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+}
+.MuiButton-root:hover {
+  background-color: #228b22 !important;
+}
+.MuiButton-root:hover .plus_sign {
+  color: #fff;
+  background: transparent;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: crimson;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.deleteIcon {
+  width: 0.9em !important;
+  height: 0.9em !important;
+}
+.note .btn:hover {
+  background-color: crimson !important;
+}
+.note .btn:hover .deleteIcon {
+  color: #fff !important;
+}
+@media (max-width: 968px) {
+  .main_note {
+    width: 500px;
+    padding: 15px 10px 5px 10px;
+    margin: 2px auto;
+    margin-left: 12%;
+  }
+}
+@media (max-width: 375px) {
+  .header img {
+    width: auto;
+  }
+  .main_note {
+    width: auto;
+  }
+  .MuiButton-root .plus_sign {
+    font-size: 50px;
+    font-weight: 100;
+    color: #228b22;
+    cursor: pointer;
+    z-index: 222;
+    background: transparent;
+    margin-right: 300px;
+  }
+}
